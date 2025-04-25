@@ -1,89 +1,122 @@
-# Prescripto - Hospital Management System
+# Prescripto - Doctor Appointment Booking Web App
 
-## Description
-**Prescripto** is a comprehensive Hospital Management System built on the MERN stack to enhance hospital operations. This system includes features such as secure user authentication, efficient appointment scheduling, patient record management, and real-time communication between doctors and patients. It provides a scalable and user-friendly platform to streamline healthcare workflows and improve the hospital experience.
+Prescripto is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers **three levels of login**: Patient, Doctor, and Admin, each with distinct features tailored to their roles. The app integrates online payment gateways (Stripe and Razorpay) to facilitate seamless and secure payments.
 
-## Features
-- **User Authentication**: Secure login for patients, doctors, and administrators.
-- **Appointment Scheduling**: Easy booking, rescheduling, and cancellation of appointments.
-- **Patient Records Management**: Store, access, and update patient health records.
-- **Doctor-Patient Communication**: Real-time messaging for consultations and follow-ups.
-- **Admin Dashboard**: Manage users, appointments, and view analytics.
-- **Secure Data Storage**: Ensure patient privacy and data security with MongoDB.
+Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Prescripto provides an efficient, user-friendly experience for both patients and healthcare providers.
 
-## Tech Stack
-- **Frontend**: React.js
-- **Backend**: Node.js and Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **State Management**: Redux (optional)
+---
 
-## Getting Started
-Follow these instructions to set up the project locally.
+## 🛠️ Tech Stack
 
-### Prerequisites
-- Node.js installed
-- MongoDB installed or access to a MongoDB cloud instance
-- Git installed
+- **Frontend:** React.js  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Authentication:** JSON Web Token (JWT)  
+- **Payment Gateways:** Stripe, Razorpay  
 
-### Installation
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/Prescripto-Hospital_Management_System.git
-   cd Prescripto-Hospital_Management_System
+---
 
-## Install dependencies
+## 🔑 Key Features
 
-1. **Install admin dependencies**
-   ```bash
-   cd admin
-   npm install
-   ```
+### 🧑‍⚕️ Patient Login:
+- Sign up and log in.
+- Book, view, cancel, or reschedule appointments.
+- Secure online payments via Cash, Stripe, or Razorpay.
+- Edit user profile (name, email, address, gender, birthday, profile picture).
 
-2. **Install frontend dependencies**
-   ```bash
-   cd frontend
-   npm install
-   ```
+### 👨‍⚕️ Doctor Login:
+- Login to view and manage appointments.
+- Dashboard: earnings, number of patients, appointment history.
+- Edit profile (description, fees, address, availability).
+- View appointment details (patient info, payment mode, status).
 
-3. **Set up environment variables**
-   In the server directory, create a .env file with the following:
+### 👩‍💼 Admin Login:
+- Create and manage doctor profiles.
+- Dashboard: total doctors, appointments, patients, recent bookings.
+- Add new doctors with full profile details.
+- Manage all appointments (cancel or mark as completed).
 
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   Run the application
+---
 
-4. **Start server:**
-   ```bash
-   cd backend
-   npm run server
-   ```
+## 🏠 Home Page
+- User-friendly layout.
+- Search doctors by specialties.
+- View top doctors and their profiles.
+- Access sections: About Us, Delivery Info, Privacy Policy, Contact Us.
+- Footer with navigation links.
 
-5. **Start Admin Panel:**
-   ```bash
-   cd admin
-   npm run dev
-   ```
+---
 
-6. **Start Frontend Panel:**
-   ```bash
-   cd frontend
-   npm run dev
-   ```
+## 🩺 All Doctors Page
+- List of all available doctors.
+- Filter by specialty.
+- Redirect to Doctor Appointment Page on profile click.
 
-# Topics
-Hospital Management, MERN Stack, MongoDB, Express.js, React, Node.js, Healthcare App, Patient Records, Appointments.
+---
 
-# Contributors
-Niraj Kumar [Github](https://github.com/meniraj07)
+## 📄 About Page
+- Info about Prescripto’s vision and mission.
+- **Why Choose Us** section:
+  - **Efficiency**: Streamlined process.
+  - **Convenience**: Online booking and payment.
+  - **Personalization**: Tailored experience.
 
-# Deployment Links
-[Prescripto Patient Panel](https://prescripto-hospital-management-system-2dlr.onrender.com)
+---
 
-[Prescripto Admin/Doctor Panel](https://prescripto-hospital-management-system-dmls.onrender.com)
+## 📞 Contact Page
+- Office address and contact details.
+- Job opportunity section.
+- Footer with additional navigation.
 
-# Contact
-For any questions or feedback, please contact [Niraj Kumar](https://www.linkedin.com/in/nirajkumar-nk/)
+---
 
-# License
-This project is licensed under the MIT License.
+## 📅 Doctor Appointment Page
+- Doctor details: profile, qualification, experience, description.
+- Appointment form: choose date, time, and payment method.
+- Online payment options: Cash, Stripe, Razorpay.
+- Related doctors section.
+- Login required for booking.
+
+---
+
+## 👤 User Profile
+- Accessible after login.
+- View and edit profile.
+- Upload profile picture.
+- View upcoming and past appointments.
+- Logout option.
+
+---
+
+## 🗄️ Admin Panel
+
+### Dashboard:
+- Statistics: number of doctors, appointments, patients, latest bookings.
+- Cancel bookings if required.
+
+### Add Doctor:
+- Add full profile: image, specialty, email, password, degree, address, experience, fees, description.
+
+### Doctor List:
+- View/edit/delete doctor profiles.
+
+### Appointments:
+- View all appointments with patient and doctor info.
+- Admin actions: cancel or mark as completed.
+
+---
+
+## 🩺 Doctor Dashboard
+- **Earnings Overview:** View total earnings from completed appointments.
+- **Appointments List:** Detailed list with patient info, date, time, payment mode, status.
+- **Actions:** Complete/cancel appointment.
+- **Profile Management:** Update description, fees, address, availability.
+
+---
+
+## 💳 Payment Integration
+- Multiple payment methods supported:
+  - Cash
+  - Stripe
+  - Razorpay
+- Ensures a secure and smooth user experience.
