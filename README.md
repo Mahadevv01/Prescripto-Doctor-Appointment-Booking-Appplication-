@@ -1,8 +1,8 @@
-# Prescripto - Doctor Appointment Booking Web App
+# 🩺 Prescripto - Doctor Appointment Web App
 
-Prescripto is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers **three levels of login**: Patient, Doctor, and Admin, each with distinct features tailored to their roles. The app integrates online payment gateways (Stripe and Razorpay) to facilitate seamless and secure payments.
+**Prescripto** is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It features three levels of authentication—**Patient**, **Doctor**, and **Admin**—with customized dashboards and functionalities for each. Integrated with online payment gateways (Stripe and Razorpay), the app ensures secure and seamless transactions.
 
-Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Prescripto provides an efficient, user-friendly experience for both patients and healthcare providers.
+Built with the **MERN** stack (MongoDB, Express.js, React.js, Node.js), Prescripto delivers an efficient and user-friendly experience for both patients and healthcare providers.
 
 ---
 
@@ -18,105 +18,115 @@ Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Pre
 
 ## 🔑 Key Features
 
-### 🧑‍⚕️ Patient Login:
-- Sign up and log in.
-- Book, view, cancel, or reschedule appointments.
-- Secure online payments via Cash, Stripe, or Razorpay.
-- Edit user profile (name, email, address, gender, birthday, profile picture).
+### 1. Three-Level Authentication
 
-### 👨‍⚕️ Doctor Login:
-- Login to view and manage appointments.
-- Dashboard: earnings, number of patients, appointment history.
-- Edit profile (description, fees, address, availability).
-- View appointment details (patient info, payment mode, status).
+#### 👤 Patient Login
+- Sign up, log in, and book appointments with doctors.
+- Manage appointments (view, cancel, reschedule).
+- Pay online using Stripe, Razorpay, or cash.
+- Maintain personal profile (edit name, email, address, gender, birthday, and upload profile picture).
 
-### 👩‍💼 Admin Login:
-- Create and manage doctor profiles.
-- Dashboard: total doctors, appointments, patients, recent bookings.
-- Add new doctors with full profile details.
+![Patient Login](https://github.com/user-attachments/assets/e749e270-1f38-4a2c-acee-13f163a6cf0c)
+
+#### 🩺 Doctor Login
+- Manage appointments and view appointment details.
+- Dashboard includes earnings, total appointments, and recent bookings.
+- Update profile including description, fees, address, availability.
+
+![Doctor Login](https://github.com/user-attachments/assets/0a5e8616-68a4-43da-b83e-c1dadc5bb8ee)
+
+#### 🛠️ Admin Login
+- Create, view, edit, or delete doctor profiles.
+- Dashboard shows analytics for appointments, doctors, and patients.
 - Manage all appointments (cancel or mark as completed).
+
+![Admin Login](https://github.com/user-attachments/assets/7799f71f-3f98-4985-b43d-cedda0b45d4c)
 
 ---
 
 ## 🏠 Home Page
-- User-friendly layout.
-- Search doctors by specialties.
-- View top doctors and their profiles.
-- Access sections: About Us, Delivery Info, Privacy Policy, Contact Us.
+
+- User-friendly UI with search and filter options.
+- View top doctors and explore sections: About Us, Delivery Info, Privacy Policy, Contact.
 - Footer with navigation links.
+
+![Home Page](https://github.com/user-attachments/assets/3b8f572b-3630-41ae-ab19-399c24e899c1)
 
 ---
 
 ## 🩺 All Doctors Page
-- List of all available doctors.
-- Filter by specialty.
-- Redirect to Doctor Appointment Page on profile click.
+
+- Browse all registered doctors.
+- Filter doctors based on specialties.
+- Click on a profile to book appointments.
 
 ---
 
 ## 📄 About Page
-- Info about Prescripto’s vision and mission.
+
+- Learn about Prescripto’s vision and mission.
 - **Why Choose Us** section:
-  - **Efficiency**: Streamlined process.
-  - **Convenience**: Online booking and payment.
+  - **Efficiency**: Streamlined appointment process.
+  - **Convenience**: Online booking and payments.
   - **Personalization**: Tailored experience.
 
 ---
 
 ## 📞 Contact Page
+
 - Office address and contact details.
 - Job opportunity section.
-- Footer with additional navigation.
 
 ---
 
 ## 📅 Doctor Appointment Page
-- Doctor details: profile, qualification, experience, description.
-- Appointment form: choose date, time, and payment method.
-- Online payment options: Cash, Stripe, Razorpay.
+
+- View detailed doctor profiles: qualification, experience, availability.
+- Appointment form with date, time, and payment options (Cash, Stripe, Razorpay).
 - Related doctors section.
-- Login required for booking.
+
+![Doctor Appointment Page](https://github.com/user-attachments/assets/06416217-801c-44ce-b9ba-cf5c7f2c2c8c)
 
 ---
 
 ## 👤 User Profile
-- Accessible after login.
-- View and edit profile.
-- Upload profile picture.
-- View upcoming and past appointments.
-- Logout option.
+
+- Edit profile info and upload profile pictures.
+- View past and upcoming appointments.
+- Logout option available.
 
 ---
 
 ## 🗄️ Admin Panel
 
-### Dashboard:
-- Statistics: number of doctors, appointments, patients, latest bookings.
-- Cancel bookings if required.
+- Dashboard: Stats on doctors, appointments, patients.
+- Add Doctor: Form for profile creation (image, specialty, email, experience, etc.).
+- View and manage all appointments.
 
-### Add Doctor:
-- Add full profile: image, specialty, email, password, degree, address, experience, fees, description.
-
-### Doctor List:
-- View/edit/delete doctor profiles.
-
-### Appointments:
-- View all appointments with patient and doctor info.
-- Admin actions: cancel or mark as completed.
+![Admin Panel](https://github.com/user-attachments/assets/d2974693-b45a-41a7-9cc4-4f923e3ce0f8)
 
 ---
 
 ## 🩺 Doctor Dashboard
-- **Earnings Overview:** View total earnings from completed appointments.
-- **Appointments List:** Detailed list with patient info, date, time, payment mode, status.
-- **Actions:** Complete/cancel appointment.
-- **Profile Management:** Update description, fees, address, availability.
+
+- **Earnings Overview**
+- **Appointments List** with patient info, appointment time, status, and payment mode.
+- **Profile Management**
+
+![Doctor Dashboard](https://github.com/user-attachments/assets/21a6655b-032d-4fe7-8f39-daf7a6756bdd)
 
 ---
 
 ## 💳 Payment Integration
-- Multiple payment methods supported:
-  - Cash
-  - Stripe
-  - Razorpay
-- Ensures a secure and smooth user experience.
+
+- Multiple options: Stripe, Razorpay, and Cash.
+- Safe, secure, and seamless.
+
+---
+
+## 🌐 Project Setup
+
+### Clone the Repository:
+```bash
+git clone https://github.com/your-username/prescripto.git
+cd prescripto
